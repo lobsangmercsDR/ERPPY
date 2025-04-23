@@ -1,6 +1,23 @@
 fastapi
 uvicorn[standard]
-sqlalchemy
+
+# ORM y base de datos
+sqlalchemy>=2.0
 psycopg2-binary
-python-dotenv
 alembic
+greenlet
+
+# Entorno
+python-dotenv
+
+# Seguridad
+passlib[bcrypt]
+python-jose[cryptography]
+email-validator
+
+# FastAPI helpers
+python-multipart
+
+# Compatibilidad tipado y herramientas
+pydantic>=2.0
+typing-extensions

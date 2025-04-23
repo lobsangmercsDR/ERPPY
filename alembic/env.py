@@ -25,7 +25,7 @@ sys.path.insert(0, os.path.abspath(
 config = context.config
 
 # 🧪 Sobrescribe la URL de base de datos con la del entorno
-config.set_main_option("sqlalchemy.url", settings.DATABASE_URL)
+config.set_main_option("sqlalchemy.url", settings.DATABASE_URL)  # type: ignore
 
 # Logging (opcional)
 if config.config_file_name is not None:
